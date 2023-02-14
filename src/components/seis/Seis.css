@@ -31,7 +31,7 @@
 .seisContainer .topSide .milestones {
   display: flex;
   flex-direction: row;
-  gap: 17rem;
+  gap: 15rem;
   text-align: center;
 }
 
