@@ -1,0 +1,124 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ol,
+ul,
+li,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+:root {
+  --white: white;
+  --red: #ff655c;
+  --dark: #b4639a;
+  --black: #333333;
+  --title1: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  --title2: Verdana, Geneva, Tahoma, sans-serif;
+  --gradient: linear-gradient(90deg, var(--red) 0%, var(--dark) 100%);
+  --gradientReverse: linear-gradient(90deg, var(--dark) 0%, var(--red) 100%);
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--red);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--dark);
+}
+
+.button {
+  width: 9rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.line {
+  height: 5px;
+  background-color: var(--red);
+  border-radius: 10px;
+  width: 5rem;
+}
+
+.aboutRed {
+  background-image: var(--gradient);
+  color: white;
+  transition: 0.2s ease-in;
+}
+
+.aboutRed:hover {
+  background-image: var(--gradientReverse);
+  letter-spacing: 1.1px;
+}
+
+.pGray {
+  color: gray;
+  width: 90%;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+
+.link:hover {
+  color: red;
+  gap: 3rem;
+}
+
+.link h4,
+.link .icon {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--red);
+}
+
+img {
+  border-radius: 10px;
+}

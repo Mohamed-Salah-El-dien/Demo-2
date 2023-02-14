@@ -1,0 +1,115 @@
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--black);
+  gap: 6rem;
+}
+
+.footerContainer .top {
+  margin-left: 7%;
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+}
+
+.footerContainer .first {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 13rem;
+  gap: 1.5rem;
+}
+
+.footerContainer .first h5 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 900;
+}
+
+.footerContainer .first p {
+  color: white;
+}
+
+.footerContainer .second,
+.footerContainer .third {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 13rem;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.footerContainer .second h6,
+.footerContainer .third h6 {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+}
+
+.footerContainer .second .services {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 4px;
+}
+
+.footerContainer .second .services p {
+  cursor: pointer;
+}
+
+.footerContainer .third .signup {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--white);
+  border-radius: 20px;
+  width: 20rem;
+  height: 2rem;
+}
+
+.footerContainer .third .signup input {
+  border-radius: 20px;
+  border: none;
+}
+
+.footerContainer .third .signup input:focus {
+  outline: none;
+}
+
+.footerContainer .third .signup .subscribeBtn {
+  background-color: var(--red);
+  border-radius: 20px;
+  border: none;
+  color: white;
+  width: 10rem;
+  transition: 0.2s ease-in;
+}
+
+.footerContainer .third .signup .subscribeBtn:hover {
+  background-image: var(--gradient);
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1000px) {
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footerContainer .third {
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .footerContainer .top {
+    margin-left: 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+  }
+}

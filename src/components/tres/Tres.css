@@ -1,0 +1,57 @@
+.tresContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-image: url("../../assets/bg2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+}
+
+/* //////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////// */
+
+.tresContainer .topSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  gap: 2rem;
+  margin-top: 6rem;
+}
+
+.tresContainer .topSide h4 {
+  font-size: 1.3rem;
+  font-family: var(--title2);
+  font-weight: 900;
+  color: gray;
+}
+
+.tresContainer .topSide h1 {
+  font-size: 3.5rem;
+  font-family: var(--title1);
+  font-weight: 900;
+  color: var(--black);
+}
+
+.tresContainer .topSide p {
+  width: 40%;
+}
+
+/* //////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////// */
+
+.tresContainer .mySwiper {
+  width: 60%;
+  height: auto;
+  margin-bottom: 4rem;
+}
+
+.tresContainer img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 3rem;
+}

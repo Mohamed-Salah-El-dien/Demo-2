@@ -1,0 +1,111 @@
+.cincoContainer {
+  background-image: url("../../assets/bg5.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 3rem;
+}
+
+/* ///////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////// */
+
+.cincoContainer .leftSide {
+  margin-top: 19rem;
+  margin-left: 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 30rem;
+}
+
+.cincoContainer .leftSide h1 {
+  font-size: 2.5rem;
+  font-family: var(--title1);
+  font-weight: 900;
+  color: var(--black);
+}
+
+/* ///////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////// */
+
+.cincoContainer .rightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 14rem;
+  margin-right: 8%;
+  width: 30rem;
+}
+
+.cincoContainer .rightSide .step {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.cincoContainer .rightSide .step .number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cincoContainer .rightSide .step .number h3 {
+  background-color: var(--red);
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: var(--white);
+  text-align: center;
+  width: 2.3rem;
+  height: 2.3rem;
+}
+
+.cincoContainer .rightSide .step .number .vLine {
+  height: 4rem;
+  width: 2px;
+  background-color: gray;
+}
+
+.cincoContainer .rightSide .step .text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 0.3rem;
+}
+
+.cincoContainer .rightSide .step .text h2 {
+  font-size: 1.2rem;
+  font-family: var(--title2);
+  font-weight: 800;
+  color: var(--black);
+}
+
+/* ///////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////// */
+
+@media (max-width: 1000px) {
+  .cincoContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cincoContainer .leftSide {
+    margin-top: 3rem;
+    margin-left: 0px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .cincoContainer .rightSide {
+    margin-top: 0rem;
+    margin-right: 0px;
+    width: 80%;
+    align-items: center;
+  }
+}

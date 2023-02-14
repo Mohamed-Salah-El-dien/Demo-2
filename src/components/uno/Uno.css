@@ -1,0 +1,101 @@
+.UnoContainer {
+  display: flex;
+  flex-direction: row;
+  background-image: url("../../assets/bg1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+.UnoContainer .leftSide {
+  margin-left: 8%;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 45rem;
+}
+
+.UnoContainer .leftSide h1 {
+  font-size: 2.3rem;
+  font-family: var(--title1);
+  color: var(--black);
+  font-weight: 900;
+  width: 80%;
+}
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+.UnoContainer .rightSide {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  width: 50rem;
+  margin-right: 8%;
+  margin-top: 5rem;
+}
+
+.UnoContainer .rightSide .step {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.UnoContainer .rightSide .step .icon {
+  color: white;
+  border-radius: 50%;
+  font-size: 3rem;
+}
+
+.UnoContainer .rightSide .step h5 {
+  font-size: 1rem;
+  font-family: var(--title2);
+  font-weight: bold;
+  color: var(--black);
+}
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+@media (max-width: 1000px) {
+  .UnoContainer {
+    background-image: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .UnoContainer .leftSide {
+    margin-left: 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .UnoContainer .rightSide {
+    width: 100%;
+    height: fit-content;
+    margin-right: 0px;
+    margin-top: 0rem;
+  }
+}
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+@media (max-width: 500px) {
+  .UnoContainer .rightSide {
+    grid-template-columns: auto;
+  }
+  .UnoContainer .rightSide .step {
+    align-items: center;
+    text-align: center;
+  }
+}

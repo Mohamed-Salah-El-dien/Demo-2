@@ -1,0 +1,73 @@
+.cuatroContainer {
+  display: flex;
+  flex-direction: row;
+  background-image: url("../../assets/bg4.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+/* ////////////////////////////////////////////// */
+/* ////////////////////////////////////////////// */
+
+.cuatroContainer .leftSide {
+  margin-left: 8%;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 45rem;
+}
+
+.cuatroContainer .leftSide h1 {
+  font-size: 2.5rem;
+  font-family: var(--title1);
+  color: var(--black);
+  font-weight: 900;
+  width: 80%;
+}
+
+.cuatroContainer .leftSide h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--red);
+}
+
+/* ////////////////////////////////////////////// */
+/* ////////////////////////////////////////////// */
+
+.cuatroContainer img {
+  margin-top: 8rem;
+  width: 40rem;
+  height: 30rem;
+  object-fit: contain;
+  margin-right: 2rem;
+}
+
+/* ////////////////////////////////////////////// */
+/* ////////////////////////////////////////////// */
+/* ////////////////////////////////////////////// */
+/* ////////////////////////////////////////////// */
+
+@media (max-width: 1000px) {
+  .cuatroContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .cuatroContainer img {
+    width: 60%;
+    margin-top: 0px;
+    margin-right: 0px;
+    height: auto;
+  }
+
+  .cuatroContainer .leftSide {
+    margin-left: 0rem;
+    margin-top: 0rem;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+}
