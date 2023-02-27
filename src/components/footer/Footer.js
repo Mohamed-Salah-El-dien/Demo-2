@@ -23,12 +23,12 @@ const Footer = () => {
           <h6>Nos Services</h6>
 
           <div className="services">
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
+            <p className="pGray">Avis clients</p>
+            <p className="pGray">Mentions légales</p>
+            <p className="pGray">Plan du site</p>
+            <p className="pGray">Blog d’Idéematic</p>
+            <p className="pGray">Le dictionnaire du digital</p>
+            <p className="pGray">‹ Notre boutique /›</p>
           </div>
         </section>
       </div>
@@ -38,7 +38,7 @@ const Footer = () => {
         <h6>Sign up for Special Offers</h6>
 
         <div className="signup">
-          <input type="text" placeholder="Email" />
+          <input type="text" placeholder="Mail" />
 
           <button className="subscribeBtn">Subscribe</button>
         </div>

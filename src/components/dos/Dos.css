@@ -9,19 +9,19 @@
 /* ///////////////////////////////////////////////////// */
 
 .dosContainer img {
-  margin-top: 5rem;
+  /* margin-top: 2rem; */
   width: 40rem;
-  height: 30rem;
-  object-fit: contain;
-  margin-left: 2rem;
+  height: 40rem;
+  object-fit: cover;
+  margin-left: 1rem;
 }
 
 /* ///////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////// */
 
 .dosContainer .rightSide {
-  margin-right: 8%;
-  margin-top: 5rem;
+  margin-right: 17rem;
+  margin-top: 11rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -29,17 +29,23 @@
 }
 
 .dosContainer .rightSide h1 {
-  font-size: 2.3rem;
+  font-size: 1.6rem;
   font-family: var(--title1);
   color: var(--black);
-  font-weight: 900;
+  font-weight: 700;
   width: 80%;
 }
 
-.dosContainer .rightSide p {
+.dosContainer .rightSide .link h4 {
+  font-weight: 600;
+  font-family: var(--title1);
+  font-size: 0.8rem;
+}
+
+/* .dosContainer .rightSide p {
   color: gray;
   width: 90%;
-}
+} */
 
 /* ///////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////// */

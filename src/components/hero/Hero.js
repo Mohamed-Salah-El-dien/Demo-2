@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "../navbar/Navbar";
 import pic from "../../assets/cover.png";
-import logo1 from "../../assets/logo1.svg";
-import logo2 from "../../assets/logo2.svg";
-import logo3 from "../../assets/logo3.svg";
-import logo4 from "../../assets/logo4.svg";
+import logo1 from "../../assets/shopify.png";
+import logo2 from "../../assets/nearpad.png";
+import logo3 from "../../assets/bench.png";
+import logo4 from "../../assets/forbes.png";
+import logo5 from "../../assets/bumble.png";
 
 import "./Hero.css";
 
@@ -21,7 +22,7 @@ const Hero = () => {
 
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. At
-            eligendi provident doloribus itaque, quam modi magni?
+            eligendi provident
           </p>
 
           <button className="button heroBtn">About us</button>
@@ -33,10 +34,16 @@ const Hero = () => {
 
       {/* the bottom brands */}
       <div className="brands">
-        <img src={logo1} alt="" />
-        <img src={logo2} alt="" />
-        <img src={logo3} alt="" />
-        <img src={logo4} alt="" />
+        <section>
+          <img src={logo1} alt="" />
+          <img src={logo2} alt="" />
+        </section>
+        <section>
+          <img src={logo3} alt="" />
+          <img src={logo4} alt="" />
+        </section>
+
+        <img src={logo5} alt="" />
       </div>
     </section>
   );

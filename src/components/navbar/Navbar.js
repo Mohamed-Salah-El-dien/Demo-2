@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+
+import img from "../../assets/stevdy.jpg";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -8,9 +10,7 @@ const Navbar = () => {
   return (
     <nav className={active ? "navbarContainer active" : "navbarContainer"}>
       <main className="mainNavbar">
-        <h1>
-          ST<span>v</span>DY
-        </h1>
+        <img src={img} alt="" />
 
         <menu className="links">
           <h3>Browser</h3>

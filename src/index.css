@@ -37,19 +37,23 @@ section {
 }
 body {
   line-height: 1;
+  overflow-x: hidden;
 }
 ol,
 ul {
   list-style: none;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
+
 :root {
   --white: white;
   --red: #ff655c;
   --dark: #b4639a;
   --black: #333333;
-  --title1: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  --title2: Verdana, Geneva, Tahoma, sans-serif;
+  --title1: "Poppins", sans-serif;
+  --title2: "Gloock", serif;
   --gradient: linear-gradient(90deg, var(--red) 0%, var(--dark) 100%);
   --gradientReverse: linear-gradient(90deg, var(--dark) 0%, var(--red) 100%);
 }
@@ -68,7 +72,7 @@ html::-webkit-scrollbar-thumb {
 
 .button {
   width: 9rem;
-  height: 2.5rem;
+  height: 2rem;
   border-radius: 10px;
   font-size: 1.1rem;
   border: none;
@@ -95,7 +99,10 @@ html::-webkit-scrollbar-thumb {
 
 .pGray {
   color: gray;
-  width: 90%;
+  width: 100%;
+  font-family: var(--title1);
+  font-weight: 400;
+  font-size: 0.8rem;
 }
 
 .link {
@@ -114,9 +121,14 @@ html::-webkit-scrollbar-thumb {
 
 .link h4,
 .link .icon {
-  font-size: 1.2rem;
-  font-weight: bold;
   color: var(--red);
+  font-weight: 600;
+  font-family: var(--title1);
+  font-size: 0.8rem;
+}
+
+.link .icon {
+  font-size: 1.2rem;
 }
 
 img {

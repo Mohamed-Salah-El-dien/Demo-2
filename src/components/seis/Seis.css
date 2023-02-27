@@ -3,7 +3,6 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
-  gap: 5rem;
 }
 
 /* ///////////////////////////////////////////////////// */
@@ -18,12 +17,12 @@
 }
 
 .seisContainer .topSide h1 {
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   font-family: var(--title1);
-  font-weight: 900;
+  font-weight: 700;
   text-align: center;
   color: var(--black);
-  width: 20rem;
+  width: 15rem;
 }
 
 /* ///////////////////////////////////////////////////// */
@@ -31,20 +30,22 @@
 .seisContainer .topSide .milestones {
   display: flex;
   flex-direction: row;
-  gap: 15rem;
+  gap: 5rem;
   text-align: center;
 }
 
 .seisContainer .topSide .milestones .item h2 {
   font-size: 2rem;
   color: var(--red);
-  font-weight: 900;
+  font-family: var(--title1);
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .seisContainer .topSide .milestones .item h3 {
-  font-size: 1rem;
-  font-family: var(--title2);
-  font-weight: 900;
+  font-size: 0.9rem;
+  font-family: var(--title1);
+  font-weight: 700;
   color: var(--black);
 }
 
@@ -55,56 +56,38 @@
   margin: 4rem 0rem;
   display: flex;
   flex-direction: row;
-  width: 90%;
-  gap: 4rem;
+  width: 100%;
+  gap: 2rem;
 }
 
 .seisContainer .bottomSide .mySwiper {
+  position: relative;
   width: 50%;
   border-radius: 10px;
-  box-shadow: 3px 6px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  margin-left: 17rem;
 }
 
 .seisContainer .bottomSide .mySwiper .slide {
   display: flex;
   flex-direction: row;
-  gap: 4rem;
   align-items: center;
-  margin-bottom: 2rem;
+}
+
+.seisContainer .bottomSide .mySwiper .dotsReview {
+  width: 3rem;
+  height: auto;
+  position: absolute;
+  bottom: 0rem;
+  left: 10rem;
+  z-index: 5;
 }
 
 .seisContainer .bottomSide .mySwiper .slide img {
-  width: 8rem;
-  height: 8rem;
-  object-fit: cover;
-  margin-top: 2rem;
-  margin-left: 2rem;
-}
-
-.seisContainer .bottomSide .mySwiper .slide .text {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
   width: 100%;
-}
-
-.seisContainer .bottomSide .mySwiper .slide .text h4 {
-  font-size: 1.2rem;
-  font-family: var(--title1);
-  font-weight: 900;
-  color: var(--black);
-}
-
-.seisContainer .bottomSide .mySwiper .slide .text h5 {
-  font-size: 1rem;
-  font-weight: 900;
-  color: gray;
-}
-
-.seisContainer .bottomSide .mySwiper .slide .text .star {
-  color: var(--dark);
-  margin-bottom: 2rem;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* ///////////////////////////////////////////////////// */
@@ -114,14 +97,16 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-right: 17rem;
+  margin-top: 2rem;
 }
 
 .seisContainer .bottomSide .invite h1 {
   font-family: var(--title1);
-  width: 70%;
-  font-size: 2rem;
-  font-weight: 900;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: var(--black);
+  padding: 0.5rem;
 }
 
 .seisContainer .bottomSide .invite .about {
@@ -149,30 +134,20 @@
   }
 
   .seisContainer .bottomSide .mySwiper {
-    width: 80%;
-  }
-
-  .seisContainer .bottomSide .mySwiper .slide {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-  }
-
-  .seisContainer .bottomSide .mySwiper .slide .text {
-    align-items: center;
-  }
-
-  .seisContainer .bottomSide .mySwiper .slide img {
+    width: 20rem;
     margin-left: 0rem;
-    width: 10rem;
-    height: 10rem;
+    margin-right: 0;
+  }
+
+  .seisContainer .bottomSide .mySwiper .dotsReview {
+    left: 9rem;
   }
 
   .seisContainer .bottomSide .invite {
     width: 100%;
     align-items: center;
     text-align: center;
+    margin-right: 0rem;
   }
 }
 

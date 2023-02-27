@@ -1,5 +1,6 @@
 import React from "react";
 import pic from "../../assets/cover.png";
+import pic1 from "../../assets/Rectangle.png";
 
 import "./Cuatro.css";
 
@@ -24,6 +25,8 @@ const Cuatro = () => {
 
       {/* right side */}
       <img src={pic} alt="img" />
+
+      <img src={pic1} alt="cover" className="background" />
     </div>
   );
 };

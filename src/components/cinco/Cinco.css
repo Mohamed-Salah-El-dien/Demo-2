@@ -1,7 +1,7 @@
 .cincoContainer {
-  background-image: url("../../assets/bg5.svg");
+  /* background-image: url("../../assets/bg5.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -12,8 +12,8 @@
 /* ///////////////////////////////////////////////////// */
 
 .cincoContainer .leftSide {
-  margin-top: 19rem;
-  margin-left: 8%;
+  margin-top: 17rem;
+  margin-left: 17rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -21,9 +21,9 @@
 }
 
 .cincoContainer .leftSide h1 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-family: var(--title1);
-  font-weight: 900;
+  font-weight: 700;
   color: var(--black);
 }
 
@@ -35,7 +35,7 @@
   flex-direction: column;
   gap: 3rem;
   margin-top: 14rem;
-  margin-right: 8%;
+  margin-right: 17rem;
   width: 30rem;
 }
 
@@ -77,9 +77,9 @@
 }
 
 .cincoContainer .rightSide .step .text h2 {
-  font-size: 1.2rem;
-  font-family: var(--title2);
-  font-weight: 800;
+  font-size: 1rem;
+  font-family: var(--title1);
+  font-weight: 700;
   color: var(--black);
 }
 

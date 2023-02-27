@@ -18,28 +18,25 @@
 .navbarContainer .mainNavbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 1rem 0rem;
 }
 
-.navbarContainer h1 {
-  color: var(--white);
-  font-size: 2.2rem;
-  font-weight: 800;
-  cursor: pointer;
+.navbarContainer .mainNavbar img {
+  margin-left: 17rem;
 }
 
 .navbarContainer .links {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .navbarContainer .links h3 {
   color: var(--white);
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   cursor: pointer;
   transition: 0.2s ease-in;
   padding: 0.2rem;
@@ -54,6 +51,10 @@
   color: var(--white);
   font-size: 2rem;
   transition: 0.75s ease-in-out;
+}
+
+.navbarContainer .mainNavbar button {
+  margin-right: 17rem;
 }
 
 /* Smaller Screens */
@@ -93,7 +94,7 @@
 /* //////////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////////// */
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .navbarContainer .menuIcon {
     display: flex;
   }
@@ -104,5 +105,13 @@
 
   .navbarContainer .menu {
     display: flex;
+  }
+
+  .navbarContainer .mainNavbar img {
+    margin-left: 1rem;
+  }
+
+  .navbarContainer .mainNavbar button {
+    margin-right: 1rem;
   }
 }

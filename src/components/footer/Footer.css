@@ -2,14 +2,13 @@
   display: flex;
   flex-direction: row;
   background-color: var(--black);
-  gap: 6rem;
 }
 
 .footerContainer .top {
-  margin-left: 7%;
+  margin-left: 17rem;
   display: flex;
   flex-direction: row;
-  gap: 6rem;
+  gap: 2rem;
 }
 
 .footerContainer .first {
@@ -21,20 +20,25 @@
 }
 
 .footerContainer .first h5 {
+  font-family: var(--title2);
   font-size: 1.5rem;
   color: white;
-  font-weight: 900;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .footerContainer .first p {
   color: white;
+  font-family: var(--title1);
+  font-weight: 600;
+  font-size: 0.7rem;
 }
 
 .footerContainer .second,
 .footerContainer .third {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 3rem;
   width: 13rem;
   gap: 1.5rem;
   margin-bottom: 2rem;
@@ -42,20 +46,26 @@
 
 .footerContainer .second h6,
 .footerContainer .third h6 {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   color: white;
-  font-weight: 500;
+  font-family: var(--title1);
+  font-weight: 700;
 }
 
 .footerContainer .second .services {
   display: flex;
   flex-direction: column;
-  color: white;
   gap: 4px;
 }
 
 .footerContainer .second .services p {
   cursor: pointer;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.footerContainer .third {
+  margin-right: 17rem;
 }
 
 .footerContainer .third .signup {
@@ -70,6 +80,7 @@
 .footerContainer .third .signup input {
   border-radius: 20px;
   border: none;
+  padding-left: 1rem;
 }
 
 .footerContainer .third .signup input:focus {
@@ -98,18 +109,24 @@
     gap: 1rem;
   }
 
+  .footerContainer .top {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    margin-left: 0rem;
+  }
+
   .footerContainer .third {
     align-items: center;
     margin-bottom: 2rem;
     margin-top: 0rem;
+    margin-right: 0rem;
   }
 }
 
 @media (max-width: 500px) {
-  .footerContainer .top {
-    margin-left: 0rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0rem;
+  .footerContainer .third .signup {
+    width: 16rem;
+    height: 2rem;
   }
 }

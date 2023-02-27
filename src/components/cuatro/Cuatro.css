@@ -1,18 +1,29 @@
 .cuatroContainer {
   display: flex;
   flex-direction: row;
-  background-image: url("../../assets/bg4.svg");
+  /* background-image: url("../../assets/bg4.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain; */
   width: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+.cuatroContainer .background {
+  position: absolute;
+  right: -20rem;
+  top: -10rem;
+  z-index: -1;
+  width: 60rem;
+  height: auto;
 }
 
 /* ////////////////////////////////////////////// */
 /* ////////////////////////////////////////////// */
 
 .cuatroContainer .leftSide {
-  margin-left: 8%;
-  margin-top: 8rem;
+  margin-left: 17rem;
+  margin-top: 15.5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -20,17 +31,18 @@
 }
 
 .cuatroContainer .leftSide h1 {
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   font-family: var(--title1);
   color: var(--black);
-  font-weight: 900;
+  font-weight: 700;
   width: 80%;
 }
 
 .cuatroContainer .leftSide h4 {
-  font-size: 1.2rem;
-  font-weight: bold;
   color: var(--red);
+  font-weight: 600;
+  font-family: var(--title1);
+  font-size: 0.8rem;
 }
 
 /* ////////////////////////////////////////////// */
@@ -38,10 +50,10 @@
 
 .cuatroContainer img {
   margin-top: 8rem;
-  width: 40rem;
+  width: auto;
   height: 30rem;
   object-fit: contain;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 /* ////////////////////////////////////////////// */
@@ -61,6 +73,10 @@
     margin-top: 0px;
     margin-right: 0px;
     height: auto;
+  }
+
+  .cuatroContainer .background {
+    display: none;
   }
 
   .cuatroContainer .leftSide {

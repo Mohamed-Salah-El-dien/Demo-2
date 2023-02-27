@@ -2,9 +2,9 @@ import React from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
 
 import pic from "../../assets/cover.png";
+import dots from "../../assets/ellipse.png";
 
 import "./Tres.css";
 
@@ -26,7 +26,7 @@ const Tres = () => {
       </div>
 
       {/* bottom side swiper */}
-      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+      <Swiper className="mySwiper">
         <SwiperSlide className="swiper-slide slide">
           <img src={pic} alt="img" />
         </SwiperSlide>
@@ -39,6 +39,7 @@ const Tres = () => {
           <img src={pic} alt="img" />
         </SwiperSlide>
       </Swiper>
+      <img src={dots} alt="" className="dots" />
     </div>
   );
 };

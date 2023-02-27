@@ -9,7 +9,7 @@ const Dos = () => {
   return (
     <div className="dosContainer">
       {/* left side */}
-      <img src={pic} alt="" />
+      <img src={pic} alt="demo-img" />
 
       {/* right side */}
       <div className="rightSide">
@@ -17,7 +17,7 @@ const Dos = () => {
 
         <h1>Best platform for the Technological Era</h1>
 
-        <p>
+        <p className="pGray">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis,
           soluta optio ut nihil ad perspiciatis delectus in veritatis temporibus
           quam praesentium alias dolor omnis placeat commodi earum inventore

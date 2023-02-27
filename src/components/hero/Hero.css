@@ -1,5 +1,6 @@
 .heroSection {
-  background-image: url("../../assets/bg3.svg");
+  background-image: url("../../assets/bg1.png");
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
@@ -14,8 +15,7 @@
   flex-direction: row;
   width: 100%;
   height: 100%;
-  margin-top: 10rem;
-  gap: 15rem;
+  gap: 2rem;
 }
 
 /* /////////////////////////////////////////////////////// */
@@ -24,28 +24,30 @@
 .heroSection .heroContainer .leftSide {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
-  width: 25rem;
-  margin-left: 8%;
+  margin-top: 16.5rem;
+  margin-left: 17rem;
   gap: 1.5rem;
 }
 
 .heroSection .heroContainer .leftSide h4 {
   font-size: 1.2rem;
+  font-weight: 400;
   color: var(--white);
-  font-family: var(--title2);
+  font-family: var(--title1);
 }
 
 .heroSection .heroContainer .leftSide h1 {
-  font-size: 3.5rem;
-  font-weight: 900;
+  font-size: 2.2rem;
+  font-weight: 600;
   color: var(--white);
   font-family: var(--title1);
 }
 
 .heroSection .heroContainer .leftSide p {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: var(--white);
+  font-family: var(--title1);
+  font-weight: 400;
   text-shadow: 1px 1px 1px var(--red);
 }
 
@@ -62,11 +64,13 @@
 /* /////////////////////////////////////////////////////// */
 
 .heroSection .heroContainer img {
-  width: 40%;
-  height: 20rem;
-  object-fit: cover;
+  width: 45rem;
+  height: 45rem;
+  object-fit: contain;
   border-radius: 10px;
-  border: 0.5rem solid var(--white);
+  margin-right: 1rem;
+  margin-top: 1rem;
+  /* border: 0.5rem solid var(--white); */
 }
 
 /* /////////////////////////////////////////////////////// */
@@ -75,17 +79,23 @@
 .heroSection .brands {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 2.5rem;
   width: 90%;
   margin-top: 2rem;
   align-items: center;
+  justify-content: center;
+}
+
+.heroSection .brands section {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
 }
 
 .heroSection .brands img {
-  margin: 0rem 2rem;
-  width: 8rem;
-  height: 4rem;
-  filter: grayscale(100%);
+  width: 6rem;
+  height: 3rem;
+  object-fit: cover;
 }
 
 /* /////////////////////////////////////////////////////// */
@@ -110,14 +120,13 @@
     margin-left: 0%;
     text-align: center;
     align-items: center;
+    margin-top: 3rem;
   }
 
   .heroSection .heroContainer img {
     width: 80%;
-  }
-
-  .heroSection .brands img {
-    margin: 0rem 0rem;
+    height: auto;
+    margin-top: 0;
   }
 }
 
@@ -126,16 +135,7 @@
 
 @media (max-width: 700px) {
   .heroSection .brands {
-    justify-content: center;
     gap: 1rem;
-  }
-}
-
-/* /////////////////////////////////////////////////////// */
-/* /////////////////////////////////////////////////////// */
-
-@media (max-width: 500px) {
-  .heroSection .brands img {
-    width: 4rem;
+    flex-direction: column;
   }
 }
