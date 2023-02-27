@@ -91,6 +91,8 @@
   background-color: var(--red);
   border-radius: 20px;
   border: none;
+  font-family: var(--title1);
+  font-weight: 600;
   color: white;
   width: 10rem;
   transition: 0.2s ease-in;
