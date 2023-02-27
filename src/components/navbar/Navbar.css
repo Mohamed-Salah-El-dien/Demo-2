@@ -37,6 +37,8 @@
 .navbarContainer .links h3 {
   color: var(--white);
   font-size: 0.8rem;
+  font-family: var(--title1);
+  font-weight: 600;
   cursor: pointer;
   transition: 0.2s ease-in;
   padding: 0.2rem;
